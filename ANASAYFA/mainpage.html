@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--HEADER BAR-->
+  <title>UYDURUK - E-commerce Website</title>
+  <link rel="stylesheet"  href="styleMainPage.css">
+  <script src="scriptMainPage.js" defer></script>
+    </head>
+   <body>
+   <header>
+     <!--NAV BAR-->
+     <nav class="navbar">
+       <a href="mainpage.html" class="logo-link">
+          <img src="logo.jpg" alt="UYDURUK" class="logo">
+         </a>
+           <ul class="nav-menu">
+             <li><a class="nav-link active" href="#">Home</a></li>
+              <li><a class="nav-link" href="#">User</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+      <!--PROPERTY SEARCH BAR-->
+  <section class="main-section">
+    <aside class="left-sidebar">
+        <div class="search-box">
+          <form id="search-form">
+            <!--SEARCH BAR-->
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+              <option value="">All</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+            </select>
+            <!--SIZE BAR-->
+            <label for="size">Size:</label>
+            <select name="size" id="size">
+              <option value="">All</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+            </select>
+            <!--COLOUR BAR-->
+            <label for="Color">Color:</label>
+            <select name="Color" id="Color">
+              <option value="">All</option>
+              <option value="">Red</option>
+              <option value="">Blue</option>
+              <option value="">Yellow</option>
+              <option value="">Black</option>
+              <option value="">Green</option>
+            </select>
+            <!--TYPE BAR-->
+            <label for="type">Type:</label>
+            <select name="type" id="type">
+              <option value="">All</option>
+              <option value="">T-shirt</option>
+              <option value="">Pants</option>
+              <option value="">Jackets</option>
+            </select>
+            <!--SEARCH BUTTON-->
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </aside>
+      
+    
+      <!--PRODUCT PROPERTIES-->
+      <section class="product-section">
+        <div class="property-container">
+          <div class="t-shirt-box">
+            <div class="t-shirt-img">
+              <img src="tshirt1.jpg" alt="T-Shirt 1">
+            </div>
+            <div class="t-shirt-info">
+              <h3 class="t-shirt-name">T-Shirt Name</h3>
+              <p class="t-shirt-price">$19.99</p>
+            </div>
+            <div class="t-shirt-properties">
+              <div class="property-box">
+                <p class="property"><strong>Color:</strong> Blue</p>
+                <p class="property"><strong>Type:</strong> T-Shirt</p>
+                <p class="property"><strong>Size:</strong> M</p>
+                <p class="property"><strong>Gender:</strong> Men</p>
+              </div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+      
+          <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+      
+          <div class="cart-box" id="cartBox">
+            <h3>Your Cart</h3>
+            <ul id="cartItems"></ul>
+            <button class="buy-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+  </section>
+  <!--FOOTER SECTION-->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://twitter.com/" target="_blank">
+        <img src="twitter.png" alt="Twitter" class="social-icon">
+      </a>
+      <a href="https://instagram.com/" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://facebook.com/" target="_blank">
+        <img src="facebook.png" alt="Facebook" class="social-icon">
+      </a>
+    </div>
+    <p class="rights">UYDURUK - All rights reserved &copy; 2023</p>
+  </footer>
+</body>
+</html>
